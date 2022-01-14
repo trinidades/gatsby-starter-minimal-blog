@@ -8,13 +8,13 @@ module.exports = {
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.js
     siteTitle: `Minimal Blog`,
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
-    siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
+    siteTitleAlt: `Minimal Blog - Gatsby Experiment`,
+    siteHeadline: `Minimal Blog - Gatsby Experiment from @trinidades`,
     siteUrl: `https://minimal-blog.lekoarts.de`,
     siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `@trinidades`,
   },
   plugins: [
     {
@@ -54,8 +54,8 @@ module.exports = {
         // See: https://github.com/LekoArts/gatsby-themes/tree/main/examples/minimal-blog#changing-your-fonts
         web: [
           {
-            name: `IBM Plex Sans`,
-            file: `https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap`,
+            name: `Ubuntu`,
+            file: `https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700&display=swap`,
           },
         ],
       },
@@ -123,7 +123,7 @@ module.exports = {
                 allPost(sort: { fields: date, order: DESC }) {
                   nodes {
                     title
-                    date(formatString: "MMMM D, YYYY")
+                    date(formatString: "YYYY, MMMM, D")
                     excerpt
                     slug
                   }
